@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/about.css">
 <link rel="stylesheet" type="text/css" href="styles/about_responsive.css">
+<link rel="stylesheet" type="text/css" href="styles/model.css">
 </head>
 <body>
 
@@ -70,8 +71,8 @@
 										<div class="header_top_nav">
 											<ul class="d-flex flex-row align-items-center justify-content-start">
 												
-												<li><a href="#">Login</a></li>
-												<li><a href="#">Sign in</a></li>
+												<li><a href="#myModal" class="trigger-btn" data-toggle="modal">Login</a></li>
+												<li><a href="#myModalreg" class="trigger-btn" data-toggle="modal">Sign in</a></li>
 											</ul>
 										</div>
 										<div class="header_top_phone">
@@ -129,7 +130,84 @@
 			</div>
 		</div>
 	</div>
-
+	
+	<!-- Sign in Modal -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<div class="modal-header">				
+				<h4 class="modal-title">Sign In</h4>
+				
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			</div>
+			<div class="modal-body">
+				<form action="#" method="post">
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-user"></i></span>
+							<input type="text" class="form-control" name="username" placeholder="Username" required="required">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+							<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+						</div>
+					</div>
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary btn-block btn-lg">Sign In</button>
+					</div>
+					<p class="hint-text"><a href="#">Forgot Password?</a></p>
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</div>
+	
+	
+	
+	
+	<!-- Resgister Model-->
+	<div  id="myModalreg" class="modal fade">
+		<div class="modal-dialog modal-login">
+			<div class="modal-content">
+				<div class="modal-header">				
+						<h4 class="modal-title">Register</h4>
+						
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<form action="#" method="post">
+						<p class="hint-text">Create your account. It's free and only takes a minute.</p>
+							<div class="form-group">
+							<div class="row">
+								<div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+								<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+							</div>        	
+							</div>
+								<div class="form-group">
+									<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="password" placeholder="Password" required="required">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+							</div>        
+							<div class="form-group">
+								<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+							</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
 	<!-- About -->
 
 	<div class="about">
